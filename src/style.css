@@ -1,0 +1,51 @@
+body {
+    font-family: Helvetica;
+    margin-left: 10vw;
+}
+
+nav {
+    font-size: x-large;
+    width: 80vw;
+    background: black;
+    margin-bottom: 10px;
+}
+
+nav > a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    width: 80vw;
+}
+
+td {
+    width: 33vw;
+}
+
+th {
+    background: radial-gradient(ellipse at top, black, transparent),
+            radial-gradient(ellipse at bottom, #757070, transparent);
+    color: white;
+}
+
+.row:hover {
+    background: #757070;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 80vw;
+}
