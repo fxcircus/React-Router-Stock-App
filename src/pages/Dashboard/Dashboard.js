@@ -17,7 +17,10 @@ export default function Dashboard( { stocks }){
                             <td>{stock.name}</td>
                         </Link>
                             <td>{stock.price}</td>
-                            <td>{stock.change} ({stock.changesPercentage})</td>
+                            <td
+                            style={ stock.change < 0 ? {color:"red"} : {color:"green"}}>
+                                {stock.change} ({stock.change > 0 ? "+" : ""}{stock.changesPercentage}%)
+                            </td>
                     </tr>
                 )
             })}
